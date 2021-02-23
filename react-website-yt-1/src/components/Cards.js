@@ -17,15 +17,15 @@ function Cards() {
               src={temp}
               text='The content in this page is information I have gathered throughout the years.'
               label='Educational'
-              path='/services'
+              path='/content'
             />
             <CardItem
               src={temp}
               text='Learn a bit more about me'
               label='About Me'
-              path='/services'
+              path='/about'
             />
-          </ul>
+          </ul>      
         </div>
       </div>
     </div>

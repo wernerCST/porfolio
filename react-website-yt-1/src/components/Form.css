@@ -1,0 +1,24 @@
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 75%;
+}
+
+.container:hover {
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+.container > h1 {
+  color: black;
+  font-size: 50px;
+  margin-top: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

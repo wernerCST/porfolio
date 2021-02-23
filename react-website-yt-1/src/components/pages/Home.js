@@ -8,7 +8,7 @@ function Home() {
     return (
       <>
         <HeroComp/>
-        <Cards/>
+        <Cards/>        
       </>
     );
   }

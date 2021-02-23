@@ -10,7 +10,8 @@ function HeroComp() {
       <h1>Mahalo</h1>
       <p>Ohana means family, family means nobody gets left behind!</p>
       <div className='hero-btns'>
-        <Button
+         <Button
+          src='/about'
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
@@ -18,14 +19,14 @@ function HeroComp() {
           Click Me!
         </Button>
         <Button
+          src='/content'
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
         >
           Projects! 
-          {/* <i className='far fa-play-circle' /> */}
-        </Button>
+        </Button> 
+
       </div>
     </div>
   );

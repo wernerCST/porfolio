@@ -3,113 +3,80 @@ import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
+
+
 function Footer() {
+  const formBtn = (event) => {
+    event.preventDefault();
+
+  }
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          If you wish to get in touch with me,
         </p>
         <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+        send me a message!!
         </p>
         <div className='input-areas'>
-          <form>
+          <form onSubmit={formBtn}>
             <input
               className='footer-input'
               name='email'
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button src='/contact' buttonStyle='btn--outline'>Submit</Button>
           </form>
         </div>
       </section>
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
-        </div>
-      </div>
+     
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
+              42
+              <i class='fas fa-cat'/>
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
           <div class='social-icons'>
-            <Link
+            <a
               class='social-icon-link facebook'
-              to='/'
+              href="https://www.facebook.com/jose.pepe.14606/" 
               target='_blank'
               aria-label='Facebook'
+              rel="noreferrer"
             >
               <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link instagram'
-              to='/'
+              href="https://www.instagram.com/rogue_waffles/" 
               target='_blank'
               aria-label='Instagram'
+              rel="noreferrer"
             >
               <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link twitter'
-              to='/'
+              href="https://twitter.com/wernerC42" 
               target='_blank'
               aria-label='Twitter'
+              rel="noreferrer"
             >
               <i class='fab fa-twitter' />
-            </Link>
-            <Link
+            </a>
+            <a
               class='social-icon-link twitter'
-              to='/'
+              href="https://www.linkedin.com/in/werner-castanaza-73a156149"            
               target='_blank'
               aria-label='LinkedIn'
+              rel="noreferrer"
             >
               <i class='fab fa-linkedin' />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
