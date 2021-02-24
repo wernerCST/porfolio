@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button }  from './Button';
 import './Form.css'
 
 function Form() {
@@ -26,9 +27,9 @@ function Form() {
                             <textarea></textarea>
                         </div>
                     </div>
+                    <Button src='contact' buttonStyle='btn--outline'>Send!</Button>
                 </form>
-           </section>
-            
+           </section>            
         </div>
     )
 }

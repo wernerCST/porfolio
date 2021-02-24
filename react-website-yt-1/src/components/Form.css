@@ -1,48 +1,43 @@
 .container {
-  background-color: #f1f1f1;
+  color: white;
 }
 .form-heading {
-  padding: 5%;
+  padding: 2%;
   text-align: center;
 }
 
 .form-heading > h1 {
   font-size: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  margin-bottom: 25px;
 }
 
 .form-container {
-  background-color: white;
   margin: auto;
-  padding: 10%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   width: 75%;
   margin-bottom: 25px;
 }
 
 .form-container:hover {
-  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.8);
 }
 
 .form {
   border: solid;
+  align-items: center;
 }
 
 .form-item {
   border: solid;
-  margin: 5%;
 }
 
-input {
-  display: block;
-  width: 100%;
-  font-size: normal;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 5px solid rgba(0, 0, 0, 1);
-  background: rgba(0, 0, 0, 0.2);
-  min-width: 250px;
-  padding-left: 5px;
-  outline: none;
-  color: rgba(0, 0, 0, 1);
+#root {
+  background-image: url('../images/contact-img.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
