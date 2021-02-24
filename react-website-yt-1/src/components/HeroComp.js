@@ -6,7 +6,6 @@ import './HeroComp.css';
 function HeroComp() {
   return (
     <div className='hero-container'>
-      {/* <video src='../videos/video-1.mp4' autoPlay loop muted /> */}
       <h1>Mahalo</h1>
       <p>Ohana means family, family means nobody gets left behind!</p>
       <div className='hero-btns'>

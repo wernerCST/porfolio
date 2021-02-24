@@ -4,16 +4,30 @@ import './Form.css'
 function Form() {
     return (
         <div className='container'>
-            <h1>Thanks for taking the time to reach out. How can I help you today?</h1>
-            <div className='form-container'>
-                <form>
-                    <label>Name: </label>
-                    <input type='text' placeholder='Name' name='name'/>
-                    <label>Name: </label><input type='text' placeholder='Email' name='email'/>
-                    <br/>
-                    <label>Name: </label><input type='text' placeholder='Message' name='Message'/>              
+           <section className='form-heading'>
+                <h1>Mahalo</h1>
+                <p>Ohana means family, family means nobody gets left behind!</p>
+           </section>
+           <section className='form-container'>
+               <form className='form'>
+                    <div className='form-item'>
+                        <div className='item'>
+                            <label>Name:</label>
+                            <input></input>
+                        </div>
+                        <div className='item'>
+                            <label>Email:</label>
+                            <input></input>
+                        </div>
+                    </div>
+                    <div className='form-item'>
+                        <div className='item'>
+                            <label>MSG:</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
                 </form>
-            </div>
+           </section>
             
         </div>
     )
