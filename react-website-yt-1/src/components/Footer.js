@@ -5,12 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 
-function Footer() {
-  const formBtn = (event) => {
-    event.preventDefault();
-
-  }
-  return (
+function Footer(props) {  
+  return (    
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
@@ -20,13 +16,8 @@ function Footer() {
         send me a message!!
         </p>
         <div className='input-areas'>
-          <form onSubmit={formBtn}>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
+          <form onSubmit={null}>
+            <input className='footer-input' name='email' type='email' placeholder='Your Email'/>
             <Button src='/contact' buttonStyle='btn--outline'>Submit</Button>
           </form>
         </div>
@@ -85,3 +76,4 @@ function Footer() {
 }
 
 export default Footer;
+

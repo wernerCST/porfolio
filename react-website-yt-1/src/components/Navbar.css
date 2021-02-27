@@ -45,10 +45,6 @@
   margin-right: 2rem;
 }
 
-.nav-item {
-  height: 80px;
-}
-
 .nav-links {
   color: #fff;
   display: flex;
@@ -73,6 +69,12 @@
 
 .menu-icon {
   display: none;
+}
+
+.btn-nav {
+  padding-top: 90px;
+  margin-top: 55px;
+  top: 100px;
 }
 
 @media screen and (max-width: 960px) {

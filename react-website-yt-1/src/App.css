@@ -5,6 +5,11 @@
   font-family: 'PT Sans', sans-serif;
 }
 
+a,
+a:hover {
+  color: white;
+}
+
 .home,
 .content,
 .about,
